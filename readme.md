@@ -170,4 +170,69 @@ DLL statements : Create,Alter,Drop,Truncate,Rename
     ADD FOREIGN KEY (attribute_name) REFERENCES refrenced_table_name(attribute);
     ```
 
+## DML : Data Manipulaiton Language
+
+
+DML Statements : Insert,Update,Delete and Merge
+
+1. INSERT Statement
+
+    ```sql
+    INSERT INTO table_name
+    VALUES (attribute1,attribute2,attribute3,...);
+    ```
+
+2. UPDATE Statement
+
+    ```sql
+    UPDATE table_name
+    SET attribute1 = value1,attribute2 = value2, ...
+    WHERE condition;
+    ```
+
+3. DELETE Statement
+
+    ```sql
+    DELETE FROM table_name WHERE condition;
+    ```
+4. SELECT Statement
+
+    ```sql
+    SELECT attributes FROM table_name WHERE condition/predicate;
+    ```
+
+5. LIMIT Statement
+
+    ```sql
+    SELECT attributes FROM table_name WHERE condition/predicate
+    LIMIT number;
+    ```
+6. ORDER BY Statement
+
+    ```sql
+    SELECT attributes FROM table_name WHERE condition/predicate
+    ORDER BY attribute ASC/DESC;
+    ```
+7. Aggregate Functions
+
+    ```sql
+    SELECT SUM(attribute),AVG(attribute),
+    MAX(attribute),MIN(attribute),
+    COUNT(attribute)
+    FROM table_name;
+    ```
+8. Group By Statements
+
+    ```sql
+    SELECT aggregate_fun(attribute)
+    FROM table_name
+    GROUP BY attribute;
+    ```
+9. Having Statement
+    ```sql
+    SELECT aggregate_fun(attribute)
+    FROM table_name
+    GROUP BY attribute;
+    HAVING condition of aggregate_fun(attribute);
+    ```
 
